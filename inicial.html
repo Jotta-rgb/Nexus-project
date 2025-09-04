@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Melodix</title>
+  <link rel="stylesheet" href="./css/inicial.css">
+  <!-- FontAwesome para ícones -->
+  <script src="https://kit.fontawesome.com/4b7e5c9a2a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="app">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2 class="logo">Melodix</h2>
+      <h3>Sua Biblioteca</h3>
+      <ul>
+        <li><i class="fa-solid fa-music"></i> Músicas Curtidas</li>
+        <li><i class="fa-solid fa-heart"></i> Favoritos</li>
+        <li><i class="fa-solid fa-record-vinyl"></i> Eu Venci o Mundo</li>
+        <li><i class="fa-solid fa-headphones"></i> Funk</li>
+        <li><i class="fa-solid fa-user-group"></i> Gorillaz</li>
+      </ul>
+
+      <div class="planos">
+        <div class="radio-container">
+          <input checked id="radio-free" name="radio" type="radio" />
+          <label for="radio-free">Premium</label>
+
+          <input id="radio-basic" name="radio" type="radio" />
+          <label for="radio-basic">Ajuda</label>
+
+          <input id="radio-premium" name="radio" type="radio" />
+          <label for="radio-premium">Configuração</label>
+
+          <div class="glider-container">
+            <div class="glider"></div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Conteúdo principal -->
+    <main class="main">
+      <!-- barra de pesquisa -->
+      <div class="top-bar">
+        <div class="input-Pesquisa">
+          <input type="text" class="styled_input_bar" placeholder=" " />
+          <label class="input-label" for="styled_input_bar">Pesquisar...</label>
+        </div>
+      </div>
+
+      <h1>Bem-vindo ao site 🎶</h1>
+      <p>Escute agora </p>
+
+      <div class="lista-cantores">
+        <h2>Cantores</h2>
+
+        <div class="cantor">
+          <img src="cantor1.jpg" alt="Foto do Cantor 1">
+          <p>Cantor 1</p>
+        </div>
+
+        <div class="cantor">
+          <img src="cantor2.jpg" alt="Foto do Cantor 2">
+          <p>Cantor 2</p>
+        </div>
+
+        <div class="cantor">
+          <img src="cantor3.jpg" alt="Foto do Cantor 3">
+          <p>Cantor 3</p>
+        </div>
+
+
+
+
+      </div>
+    </main>
+
+  </div>
+
+   <!-- teste das ondas -->
+
+    <div class="waves">
+      <div class="wave" style="--i:1;"></div>
+      <div class="wave" style="--i:2;"></div>
+      <div class="wave" style="--i:3;"></div>
+      <div class="wave" style="--i:4;"></div>
+      <div class="wave" style="--i:5;"></div>
+      <div class="wave" style="--i:6;"></div>
+      <div class="wave" style="--i:7;"></div>
+      <div class="wave" style="--i:8;"></div>
+      <div class="wave" style="--i:9;"></div>
+      <div class="wave" style="--i:10;"></div>
+    </div>
+    
+  <script src="./js/inicial.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,257 @@
+/* ===== Conteúdo Principal ===== */
+.main {
+  flex: 1;
+  padding: 30px;
+  background: #181818;
+  overflow-y: auto;
+}
+
+
+/* ===== Layout Geral ===== */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background: #121212;
+  color: #fff;
+  display: flex;
+}
+
+.app {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+  position: relative;       /* necessário para os botões colarem no fundo */
+  width: 220px;
+  height: 100vh;
+  background: #000;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar h3 {
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #bbb;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;   /* empurra os botões pro final */
+}
+
+.sidebar ul li {
+  margin-bottom: 12px;
+  cursor: pointer;
+  color: #ddd;
+  transition: color 0.3s ease;
+}
+
+.sidebar ul li:hover {
+  color: rgb(206, 71, 255);
+}
+
+
+/* ===== Planos (Free / Basic / Premium) ===== */
+.planos {
+  position: absolute;
+  bottom: 20px;  /* fixa no rodapé da sidebar */
+  left: 20px;
+  right: 20px;
+}
+
+.radio-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-container input[type="radio"] {
+  display: none;
+}
+
+.radio-container label {
+  padding: 10px;
+  cursor: pointer;
+  color: #999;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+.radio-container label:hover {
+  background: #222;
+}
+
+.radio-container input[type="radio"]:checked + label {
+  color: rgb(118, 28, 169);
+  font-weight: bold;
+  background: linear-gradient(to right, #222, #444);
+}
+
+
+
+/* ===== Barra de pesquisa no topo ===== */
+.top-bar {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  margin-bottom: 30px;     /* espaço abaixo da barra */
+}
+
+.input-Pesquisa {
+  position: relative;
+  width: 300px;
+}
+
+.styled_input_bar {
+  width: 90%;
+  padding: 1em;
+  font-size: 1em;
+  border: 0.1em solid rgb(176, 94, 234);
+  border-radius: 2em;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  outline: none;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.styled_input_bar::placeholder {
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease;
+}
+
+.styled_input_bar:focus {
+  border-color: rgb(177, 89, 239);
+}
+
+.styled_input_bar:focus::placeholder {
+  color: transparent;
+}
+
+.input-label {
+  position: absolute;
+  left: 1em;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1em;
+  color: grey;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.styled_input_bar:focus + .input-label,
+.styled_input_bar:not(:placeholder-shown) + .input-label {
+  top: 0.1em;
+  left: 1em;
+  font-size: 0.8em;
+  color: white;
+  background-color: #181818; /* mesmo bg do .main */
+  padding: 0 0.5em;
+}
+
+.styled_input_bar:not(:focus):not(:placeholder-shown) + .input-label {
+  color: grey;
+}
+
+
+
+/* lista de cantores */
+.lista-cantores {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;           /* espaço entre os cantores */
+}
+
+.cantor {
+  text-align: center;
+}
+
+.cantor img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;  /* deixa a foto redonda */
+  object-fit: cover;
+}
+
+
+/* teste onda css */
+
+.wave{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0e0b14;
+  color: white;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.wave-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+}
+
+.text h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.waves {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 10px;
+  z-index: -1;
+}
+
+.wave {
+  width: 2px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid #b86bff;
+  animation: waveAnim 2s ease-in-out infinite;
+  animation-delay: calc(var(--i) * 0.1s);
+}
+
+@keyframes waveAnim {
+  0%, 100% {
+    transform: scaleY(0.5) scaleX(1.2);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scaleY(1.5) scaleX(0.8);
+    opacity: 1;
+  }
+}
