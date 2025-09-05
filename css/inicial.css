@@ -162,7 +162,10 @@ body {
   color: grey;
 }
 
-
+.TopCantores{
+ margin-top: 80px;
+ margin-bottom: -20px;
+}
 
 /* lista de cantores */
 .lista-cantores {
@@ -176,8 +179,8 @@ body {
 }
 
 .cantor img {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;  /* deixa a foto redonda */
   object-fit: cover;
 }
