@@ -1,3 +1,6 @@
+    //  ESSE HTML É UNICAMENTE PARA A PAGINA DE CADASTRO
+    //  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  
+
 document.getElementById("cadastroForm").addEventListener("submit", function(event) {
   event.preventDefault();
 
@@ -33,4 +36,5 @@ document.getElementById("cadastroForm").addEventListener("submit", function(even
     window.location.href = "inicial.html";
   }, 3000);
 });
+
 
