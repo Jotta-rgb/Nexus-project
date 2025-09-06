@@ -19,7 +19,7 @@ body {
   display: flex;
 }
 
-.fotoPerfil{
+.FotoPerfil{
   width: 200px;
   height: 200px;
   border-radius: 50%;  /* deixa a foto redonda */
@@ -45,9 +45,10 @@ body {
 
 
 .sidebar h3 {
-  margin-bottom: 250px;
+  margin-top: 80px;
+  margin-bottom: 20px;
   font-size: 14px;
-  color: #bbb;
+  color: #bbbbbb93;
 }
 
 .sidebar ul {
