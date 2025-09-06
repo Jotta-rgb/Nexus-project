@@ -10,7 +10,7 @@
 /* ===== Layout Geral ===== */
 body {
   margin: 0;
-  padding: 10;
+  padding: 100;
   width: 100%;
   height: 100%;
   font-family: Arial, sans-serif;
@@ -19,20 +19,18 @@ body {
   display: flex;
 }
 
-.fotoPerfil {
+.FotoPerfil{
   width: 200px;
   height: 200px;
-  border-radius: 50%;
-  /* deixa a foto redonda */
+  border-radius: 50%;  /* deixa a foto redonda */
   object-fit: cover;
-
+  
 }
 
 
 /* ===== Sidebar ===== */
 .sidebar {
-  position: relative;
-  /* necessário para os botões colarem no fundo */
+  position: relative;       /* necessário para os botões colarem no fundo */
   width: 250px;
   height: 100vh;
   background: #000;
@@ -43,18 +41,21 @@ body {
   flex-direction: column;
 }
 
+
+
+
 .sidebar h3 {
-  margin-bottom: 250px;
+  margin-top: 80px;
+  margin-bottom: 20px;
   font-size: 14px;
-  color: #bbb;
+  color: #bbbbbb93;
 }
 
 .sidebar ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  flex-grow: 1;
-  /* empurra os botões pro final */
+  flex-grow: 1;   /* empurra os botões pro final */
 }
 
 .sidebar ul li {
@@ -72,8 +73,7 @@ body {
 /* ===== Planos (Free / Basic / Premium) ===== */
 .planos {
   position: absolute;
-  bottom: 20px;
-  /* fixa no rodapé da sidebar */
+  bottom: 20px;  /* fixa no rodapé da sidebar */
   left: 20px;
   right: 20px;
 }
@@ -99,7 +99,7 @@ body {
   background: #222;
 }
 
-.radio-container input[type="radio"]:checked+label {
+.radio-container input[type="radio"]:checked + label {
   color: rgb(118, 28, 169);
   font-weight: bold;
   background: linear-gradient(to right, #222, #444);
@@ -111,10 +111,8 @@ body {
 .top-bar {
   width: 100%;
   display: flex;
-  justify-content: center;
-  /* centraliza horizontalmente */
-  margin-bottom: 30px;
-  /* espaço abaixo da barra */
+  justify-content: center; /* centraliza horizontalmente */
+  margin-bottom: 30px;     /* espaço abaixo da barra */
 }
 
 .input-Pesquisa {
@@ -159,32 +157,30 @@ body {
   transition: all 0.3s ease;
 }
 
-.styled_input_bar:focus+.input-label,
-.styled_input_bar:not(:placeholder-shown)+.input-label {
+.styled_input_bar:focus + .input-label,
+.styled_input_bar:not(:placeholder-shown) + .input-label {
   top: 0.1em;
   left: 1em;
   font-size: 0.8em;
   color: white;
-  background-color: #181818;
-  /* mesmo bg do .main */
+  background-color: #181818; /* mesmo bg do .main */
   padding: 0 0.5em;
 }
 
-.styled_input_bar:not(:focus):not(:placeholder-shown)+.input-label {
+.styled_input_bar:not(:focus):not(:placeholder-shown) + .input-label {
   color: grey;
 }
 
-.TopCantores {
-  margin-top: 80px;
-  margin-bottom: -20px;
+.TopCantores{
+ margin-top: 80px;
+ margin-bottom: -20px;
 }
 
 /* lista de cantores */
 .lista-cantores {
   margin-top: 40px;
   display: flex;
-  gap: 23px;
-  /* espaço entre os cantores */
+  gap: 23px;           /* espaço entre os cantores */
 }
 
 .cantor {
@@ -194,28 +190,7 @@ body {
 .cantor img {
   width: 200px;
   height: 200px;
-  border-radius: 50%;
-  /* deixa a foto redonda */
+  border-radius: 50%;  /* deixa a foto redonda */
   object-fit: cover;
 }
 
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #444;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
