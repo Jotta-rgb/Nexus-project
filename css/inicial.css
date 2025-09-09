@@ -20,18 +20,20 @@ body {
   position: fixed;
 }
 
-.FotoPerfil{
+.FotoPerfil {
   width: 200px;
   height: 200px;
-  border-radius: 50%;  /* deixa a foto redonda */
+  border-radius: 50%;
+  /* deixa a foto redonda */
   object-fit: cover;
-  
+
 }
 
 
 /* ===== Sidebar ===== */
 .sidebar {
-  position: relative;       /* necessário para os botões colarem no fundo */
+  position: relative;
+  /* necessário para os botões colarem no fundo */
   width: 250px;
   height: 100vh;
   background: #000;
@@ -56,7 +58,8 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
-  flex-grow: 1;   /* empurra os botões pro final */
+  flex-grow: 1;
+  /* empurra os botões pro final */
 }
 
 .sidebar ul li {
@@ -74,7 +77,8 @@ body {
 /* ===== Planos (Free / Basic / Premium) ===== */
 .planos {
   position: absolute;
-  bottom: 20px;  /* fixa no rodapé da sidebar */
+  bottom: 20px;
+  /* fixa no rodapé da sidebar */
   left: 20px;
   right: 20px;
 }
@@ -100,7 +104,7 @@ body {
   background: #222;
 }
 
-.radio-container input[type="radio"]:checked + label {
+.radio-container input[type="radio"]:checked+label {
   color: rgb(118, 28, 169);
   font-weight: bold;
   background: linear-gradient(to right, #222, #444);
@@ -112,8 +116,10 @@ body {
 .top-bar {
   width: 100%;
   display: flex;
-  justify-content: center; /* centraliza horizontalmente */
-  margin-bottom: 30px;     /* espaço abaixo da barra */
+  justify-content: center;
+  /* centraliza horizontalmente */
+  margin-bottom: 30px;
+  /* espaço abaixo da barra */
 }
 
 .input-Pesquisa {
@@ -158,23 +164,24 @@ body {
   transition: all 0.3s ease;
 }
 
-.styled_input_bar:focus + .input-label,
-.styled_input_bar:not(:placeholder-shown) + .input-label {
+.styled_input_bar:focus+.input-label,
+.styled_input_bar:not(:placeholder-shown)+.input-label {
   top: 0.1em;
   left: 1em;
   font-size: 0.8em;
   color: white;
-  background-color: #181818; /* mesmo bg do .main */
+  background-color: #181818;
+  /* mesmo bg do .main */
   padding: 0 0.5em;
 }
 
-.styled_input_bar:not(:focus):not(:placeholder-shown) + .input-label {
+.styled_input_bar:not(:focus):not(:placeholder-shown)+.input-label {
   color: grey;
 }
 
-.TopCantores{
- margin-top: 80px;
- margin-bottom: -20px;
+.TopCantores {
+  margin-top: 80px;
+  margin-bottom: -20px;
 }
 
 /* lista de cantores */
@@ -182,7 +189,8 @@ body {
   margin-bottom: 100px;
   margin-top: 40px;
   display: flex;
-  gap: 23px;           /* espaço entre os cantores */
+  gap: 23px;
+  /* espaço entre os cantores */
 }
 
 .cantor {
@@ -192,21 +200,99 @@ body {
 .cantor img {
   width: 200px;
   height: 200px;
-  border-radius: 50%;  /* deixa a foto redonda */
+  border-radius: 50%;
+  /* deixa a foto redonda */
   object-fit: cover;
 }
 
-.swiper-slide{
-display: flex!important;
-gap: 30px;
+.swiper-slide {
+  display: flex !important;
+  gap: 30px;
+}
+
+/* Playlist */
+
+/* Agrupamento dos cards */
+.card-group {
+  display: flex;
+  gap: 20px;
+  /* espaço entre os cards */
+  justify-content: center;
+  flex-wrap: wrap;
+  /* quebra de linha em telas menores */
+  margin: 30px auto;
+  max-width: 1200px;
+  /* largura máxima */
+  padding: 20px;
+}
+
+/* Cada card */
+.card {
+  flex: 1;
+  min-width: 280px;
+  /* largura mínima */
+  max-width: 350px;
+  /* largura máxima */
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background-color: #1a1a1a;
+  /* fundo escuro */
+  color: #fff;
+  /* texto branco */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* efeito ao passar o mouse */
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* imagem do topo */
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  /* corta e ajusta a imagem */
+}
+
+/* corpo do card */
+.card-body {
+  padding: 15px 20px;
+}
+
+/* título */
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #a855f7;
+  /* roxo */
+}
+
+/* texto */
+.card-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  color: #ddd;
+}
+
+/* small */
+.card-text small {
+  font-size: 0.8rem;
+  color: #aaa;
 }
 
 
- /*footer = parte final do site */
+
+/*footer = parte final do site */
 
 .footer {
   width: 100%;
-  background-color: #000; /* mesma cor da sidebar */
+  background-color: #000;
+  /* mesma cor da sidebar */
   height: 300px;
   color: #fff;
   padding: 20px 30px;
@@ -221,7 +307,8 @@ gap: 30px;
 }
 
 .footer-col h3 {
-  font-size: 19px;  /* títulos maiores */
+  font-size: 19px;
+  /* títulos maiores */
   margin-bottom: 20px;
   font-weight: bold;
   color: #fff;
@@ -239,21 +326,21 @@ gap: 30px;
 .footer-col ul li a,
 .footer-col p,
 .footer-col a {
-  font-size: 18px; 
+  font-size: 18px;
   line-height: 1.6;
   color: #ccc;
   text-decoration: none;
-  
+
 }
 
 .footer-col ul li a:hover,
 .footer-col a:hover {
   color: #a855f7;
-   /* hoover roxo */
+  /* hoover roxo */
 }
 
 .payments img {
-  width: 50px; 
+  width: 50px;
   margin-right: 12px;
   vertical-align: middle;
 }
@@ -261,6 +348,5 @@ gap: 30px;
 .social a img {
   width: 48px;
   margin-right: 10px;
-   
-}
 
+}
