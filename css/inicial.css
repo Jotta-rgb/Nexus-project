@@ -194,3 +194,7 @@ body {
   object-fit: cover;
 }
 
+.swiper-slide{
+display: flex!important;
+gap: 30px;
+}
