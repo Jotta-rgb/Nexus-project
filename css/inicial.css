@@ -238,15 +238,17 @@ gap: 30px;
 .footer-col ul li a,
 .footer-col p,
 .footer-col a {
-  font-size: 18px; /* texto mais legível */
+  font-size: 18px; 
   line-height: 1.6;
   color: #ccc;
   text-decoration: none;
+  
 }
 
 .footer-col ul li a:hover,
 .footer-col a:hover {
-  color: #a855f7; /* hover roxo */
+  color: #a855f7;
+   /* hoover roxo */
 }
 
 .payments img {
@@ -256,8 +258,8 @@ gap: 30px;
 }
 
 .social a img {
-  width: 28px;
+  width: 48px;
   margin-right: 10px;
-  filter: brightness(0) invert(1); /* deixa branco se for logo escuro */
+   
 }
 
