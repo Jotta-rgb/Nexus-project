@@ -17,6 +17,7 @@ body {
   background: #121212;
   color: #fff;
   display: flex;
+  position: fixed;
 }
 
 .FotoPerfil{
