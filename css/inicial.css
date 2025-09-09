@@ -178,6 +178,7 @@ body {
 
 /* lista de cantores */
 .lista-cantores {
+  margin-bottom: 100px;
   margin-top: 40px;
   display: flex;
   gap: 23px;           /* espaço entre os cantores */
@@ -197,5 +198,66 @@ body {
 .swiper-slide{
 display: flex!important;
 gap: 30px;
+}
+
+
+ /*footer = parte final do site */
+
+.footer {
+  width: 100%;
+  background-color: #000; /* mesma cor da sidebar */
+  height: 300px;
+  color: #fff;
+  padding: 20px 30px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 70px;
+  max-width: 12000px;
+  margin: auto;
+}
+
+.footer-col h3 {
+  font-size: 19px;  /* títulos maiores */
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a,
+.footer-col p,
+.footer-col a {
+  font-size: 18px; /* texto mais legível */
+  line-height: 1.6;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-col ul li a:hover,
+.footer-col a:hover {
+  color: #a855f7; /* hover roxo */
+}
+
+.payments img {
+  width: 50px; 
+  margin-right: 12px;
+  vertical-align: middle;
+}
+
+.social a img {
+  width: 28px;
+  margin-right: 10px;
+  filter: brightness(0) invert(1); /* deixa branco se for logo escuro */
 }
 
