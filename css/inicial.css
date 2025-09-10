@@ -1,7 +1,7 @@
 /* ===== Conteúdo Principal ===== */
 .main {
   flex: 1;
-  padding: 30px;
+  /* padding: 30px; */
   background: #181818;
   overflow-y: auto;
 }
@@ -9,7 +9,7 @@
 
 /* ===== Layout Geral ===== */
 body {
-  margin: 0;
+  margin: 0px;
   padding: 100;
   width: 100%;
   height: 100%;
@@ -18,6 +18,10 @@ body {
   color: #fff;
   display: flex;
   position: fixed;
+}
+
+.BemVindo{
+  position: center;
 }
 
 .FotoPerfil {
@@ -42,9 +46,13 @@ body {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  
 }
 
-
+.teste{
+  padding: 30px!important;
+ 
+}
 
 
 .sidebar h3 {
@@ -191,6 +199,7 @@ body {
   display: flex;
   gap: 23px;
   /* espaço entre os cantores */
+
 }
 
 .cantor {
@@ -287,28 +296,27 @@ body {
 
 
 
-/*footer = parte final do site */
-
+/* ===== Footer ===== */
 .footer {
   width: 100%;
-  background-color: #000;
-  /* mesma cor da sidebar */
-  height: 300px;
+  background-color: #000; /* mesma cor da sidebar */
   color: #fff;
-  padding: 20px 30px;
+  padding: 20px 0; /* só em cima e embaixo, nada nas laterais */
 }
 
 .footer-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 70px;
-  max-width: 12000px;
-  margin: auto;
+  gap: 50px;
+  width: 100%;
+  margin: 0;        /* <-- antes era auto */
+  padding: 0 40px;  /* respiro interno, pode tirar se quiser */
+  box-sizing: border-box;
 }
+
 
 .footer-col h3 {
   font-size: 19px;
-  /* títulos maiores */
   margin-bottom: 20px;
   font-weight: bold;
   color: #fff;
@@ -330,13 +338,11 @@ body {
   line-height: 1.6;
   color: #ccc;
   text-decoration: none;
-
 }
 
 .footer-col ul li a:hover,
 .footer-col a:hover {
-  color: #a855f7;
-  /* hoover roxo */
+  color: #a855f7; /* hover roxo */
 }
 
 .payments img {
@@ -348,5 +354,4 @@ body {
 .social a img {
   width: 48px;
   margin-right: 10px;
-
 }
