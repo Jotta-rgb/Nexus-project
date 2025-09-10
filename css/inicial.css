@@ -63,13 +63,16 @@ body {
   transition: color 0.3s ease;
 }
 
- .fotoPerfil img {
-  background:  rgb(33, 10, 41);
-  width: 150px;
-  height: 150px;
-  border-radius: 60%;  /*arredonda as beiradas */
-  padding: 10px;
- }
+.fotoPerfil img {
+  background: rgb(33, 10, 41);
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  /*arredonda as beiradas */
+  padding: 8px;
+}
+
+
 
 .sidebar ul li:hover {
   color: rgb(206, 71, 255);
@@ -240,7 +243,7 @@ body {
   max-width: 1500px;
   /* largura máxima */
   padding: 20px;
-  
+
 }
 
 .card {
@@ -298,9 +301,12 @@ body {
 
 .Lista-album {
   display: grid;
-  grid-template-rows: repeat(4, auto); /* 3 álbuns por coluna */
-  grid-auto-flow: column; /* preenche na vertical primeiro */
-  gap: 20px; /* espaço entre os álbuns */
+  grid-template-rows: repeat(4, auto);
+  /* 3 álbuns por coluna */
+  grid-auto-flow: column;
+  /* preenche na vertical primeiro */
+  gap: 20px;
+  /* espaço entre os álbuns */
   padding: 20px;
 }
 
@@ -309,7 +315,8 @@ body {
 .album-container {
   display: flex;
   flex-direction: row;
-  background: #1a1a1a; /* fundo escuro */
+  background: #1a1a1a;
+  /* fundo escuro */
   border-radius: 15px;
   overflow: hidden;
   max-width: 700px;
@@ -335,14 +342,16 @@ body {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* centraliza verticalmente o texto */
+  justify-content: center;
+  /* centraliza verticalmente o texto */
 }
 
 /* Título */
 .album-title {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #a855f7; /* roxo */
+  color: #a855f7;
+  /* roxo */
   margin-bottom: 10px;
 }
 
