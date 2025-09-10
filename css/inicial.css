@@ -229,7 +229,7 @@ body {
 /* Agrupamento dos cards */
 .card-group {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   /* espaço entre os cards */
   justify-content: center;
   flex-wrap: wrap;
@@ -238,6 +238,7 @@ body {
   max-width: 1500px;
   /* largura máxima */
   padding: 20px;
+  
 }
 
 /* Cada card */
