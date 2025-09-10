@@ -290,6 +290,78 @@ body {
 }
 
 /* =========================
+   Ábuns
+   ========================= */
+
+/* Container principal do álbum */
+.album-container {
+  display: flex;
+  flex-direction: row;
+  background: #1a1a1a; /* fundo escuro */
+  border-radius: 15px;
+  overflow: hidden;
+  max-width: 700px;
+  margin: 20px auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease-in-out;
+}
+
+.album-container:hover {
+  transform: translateY(-4px);
+}
+
+/* Imagem da capa */
+.album-cover img {
+  width: 220px;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Conteúdo do álbum */
+.album-info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centraliza verticalmente o texto */
+}
+
+/* Título */
+.album-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #a855f7; /* roxo */
+  margin-bottom: 10px;
+}
+
+/* Artista */
+.album-artist {
+  font-size: 1rem;
+  color: #ddd;
+  margin-bottom: 8px;
+}
+
+/* Data */
+.album-date {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* Responsividade: no celular imagem em cima, texto embaixo */
+@media (max-width: 576px) {
+  .album-container {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .album-cover img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+/* =========================
    Footer
    ========================= */
 .footer {
