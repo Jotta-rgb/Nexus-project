@@ -197,6 +197,11 @@ body {
   text-align: center;
 }
 
+.cantor:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(46, 14, 161, 0.4);
+}
+
 .cantor img {
   width: 200px;
   height: 200px;
@@ -220,8 +225,8 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   /* quebra de linha em telas menores */
-  margin: 30px auto;
-  max-width: 1200px;
+  margin:  auto;
+  max-width: 1500px;
   /* largura máxima */
   padding: 20px;
 }
@@ -246,7 +251,7 @@ body {
 /* efeito ao passar o mouse */
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 20px rgba(66, 17, 179, 0.4);
 }
 
 /* imagem do topo */
