@@ -478,9 +478,9 @@ body {
 
 
 
-/* =========================
-   Footer
-   ========================= */
+
+   /* #region Footer */
+
 .footer {
   width: 100%;
   background-color: #000;
@@ -542,3 +542,5 @@ body {
   width: 48px;
   margin-right: 10px;
 }
+
+/* #endregion */
