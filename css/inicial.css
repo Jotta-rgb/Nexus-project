@@ -568,6 +568,13 @@ body {
 .social a img {
   width: 48px;
   margin-right: 10px;
+  
+}
+
+.footer-segu img {
+  width: 100px;   /* ajuste para o tamanho que quiser */
+  height: auto;  /* mantém a proporção da imagem */
+ 
 }
 
 /* #endregion */
