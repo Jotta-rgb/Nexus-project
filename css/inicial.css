@@ -39,6 +39,30 @@ body {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+
+}
+
+/* Melodix */
+
+.sidebar .logo {
+  font-size: 2.5rem;
+  /* Aumenta o tamanho do texto */
+  font-weight: bold;
+  /* Deixa em negrito */
+  color: white;
+  /* Cor do texto */
+  text-align: center;
+  /* Centraliza a logo */
+}
+
+
+
+.sidebar p {
+  text-align: center;
+  /* Centraliza o p*/
+}
+.sidebar p:hover {
+  color: rgb(206, 71, 255);
 }
 
 .sidebar h3 {
@@ -368,6 +392,91 @@ body {
   color: #aaa;
 }
 
+
+/* =========================
+   Generos
+   ========================= */
+
+/* Container principal que segura todos os cards de gêneros */
+.Gêneros-lista {
+  display: grid;
+  /* Usa grid para organizar os itens */
+  grid-template-columns: repeat(4, 1fr);
+  /* Cria 4 colunas iguais */
+  gap: 20px;
+  /* Espaçamento entre os cards */
+  padding: 20px;
+  /* Espaçamento interno do container */
+
+}
+
+/* Cada card de gênero */
+.Gêneros-lista .card {
+  position: relative;
+  /* Necessário para o overlay funcionar */
+  border-radius: 15px;
+  /* Bordas arredondadas */
+  overflow: hidden;
+  /* Esconde o que passar da borda (ex: imagem grande) */
+  cursor: pointer;
+  /* Mostra a "mãozinha" ao passar o mouse */
+  transition: transform 0.3s ease;
+  /* Suaviza o efeito de hover */
+}
+
+/* Efeito quando passar o mouse em cima do card */
+.Gêneros-lista .card:hover {
+  transform: scale(1.05);
+  /* Dá um leve zoom no card */
+}
+
+/* Imagem dentro do card */
+.Gêneros-lista .card img {
+  width: 100%;
+  /* Faz a imagem ocupar toda a largura */
+  height: 100%;
+  /* Faz a imagem ocupar toda a altura */
+  object-fit: cover;
+  /* Garante que a imagem não distorça */
+}
+
+/* Área de texto em cima da imagem (overlay) */
+.Gêneros-lista .card-img-overlay {
+  position: absolute;
+  /* Fica por cima da imagem */
+  bottom: 0;
+  /* Gruda no rodapé do card */
+  left: 0;
+  right: 0;
+  padding: 15px;
+  /* Espaçamento interno do overlay */
+  background: linear-gradient(
+      /* Gradiente para destacar o texto */
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.2));
+  color: #fff;
+  /* Texto branco */
+}
+
+/* Título do gênero */
+.card-title1 {
+  font-size: 1.2rem;
+  /* Tamanho da fonte do título */
+  font-weight: bold;
+  /* Negrito */
+  margin: 0;
+  /* Remove margem padrão */
+}
+
+/* Texto abaixo do título */
+.card-text1 {
+  font-size: 0.9rem;
+  /* Fonte um pouco menor */
+  margin: 5px 0 0;
+  /* Espaço pequeno acima */
+  color: #ddd;
+  /* Cor um pouco mais clara que o título */
+}
 
 
 
