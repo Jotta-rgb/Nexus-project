@@ -1,6 +1,6 @@
-/* =========================
-   Layout Geral e Reset
-   ========================= */
+
+  /* #region Layout Geral e Reset */
+
 body {
   margin: 0;
   padding: 0;
@@ -8,8 +8,9 @@ body {
   height: 100%;
   font-family: Arial, sans-serif;
   background: #121212;
-  color: #fff;
+  color: #ffffff;
   display: flex;
+  position: fixed;
 }
 
 .main {
@@ -22,10 +23,12 @@ body {
   padding: 30px;
 }
 
+/* #endregion */
 
-/* =========================
-   Sidebar
-   ========================= */
+
+   /* #region Sidebar */
+
+
 .sidebar {
   position: relative;
   /* necessário para os botões colarem no fundo */
@@ -95,14 +98,15 @@ body {
 }
 
 
-
 .sidebar ul li:hover {
   color: rgb(206, 71, 255);
 }
 
-/* =========================
-   Planos (Free / Basic / Premium)
-   ========================= */
+/* #endregion */
+
+
+   /* #region Botão (Configuração / ajuda / Premium) */
+
 .planos {
   position: absolute;
   bottom: 20px;
@@ -138,10 +142,13 @@ body {
   background: linear-gradient(to right, #222, #444);
 }
 
-/* =========================
-   Barra de pesquisa no topo
-   ========================= */
+/* #endregion */
+
+
+  /* #region Barra de pesquisa no topo */
+
 .top-bar {
+  margin-top: 10px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -207,9 +214,11 @@ body {
   color: grey;
 }
 
-/* =========================
-   Top Cantores / Lista de Cantores
-   ========================= */
+/* #endregion */
+
+
+   /* #region Top Cantores / Lista de Cantores */
+  
 .TopCantores {
   margin-top: -20px;
   margin-bottom: -60px;
@@ -217,8 +226,8 @@ body {
 }
 
 .lista-cantores {
-  margin-top: 40px;
-  margin-bottom: 100px;
+  margin-top: 20px;
+  margin-bottom: 0px;
   display: flex;
   gap: 23px;
   /* espaço entre os cantores */
@@ -246,9 +255,11 @@ body {
   gap: 30px;
 }
 
-/* =========================
-   Playlist / Cards
-   ========================= */
+/* #endregion */
+
+
+  /* #region Playlist / Cards */
+
 
 .Playlist {
   padding: 40px;
@@ -315,13 +326,21 @@ body {
   color: #aaa;
 }
 
-/* =========================
-   Ábuns
-   ========================= */
+/* #endregion */
+
+
+   /* #region Ábuns */
+
 
 /* Container principal do álbum */
 
+.albuns{
+  padding: 40px;
+  margin-top: 20px;
+}
+
 .Lista-album {
+  margin-top: -50px;
   display: grid;
   grid-template-rows: repeat(4, auto);
   /* 3 álbuns por coluna */
@@ -390,13 +409,21 @@ body {
   color: #aaa;
 }
 
+/* #endregion */
 
-/* =========================
-   Generos
-   ========================= */
+
+   /* #region Generos */
+
 
 /* Container principal que segura todos os cards de gêneros */
-.Gêneros-lista {
+
+.generos{
+ padding: 40px;
+ margin-top: 30px;
+}
+
+.generos-lista {
+  margin-top: -50px;
   display: grid;
   /* Usa grid para organizar os itens */
   grid-template-columns: repeat(4, 1fr);
@@ -409,7 +436,7 @@ body {
 }
 
 /* Cada card de gênero */
-.Gêneros-lista .card {
+.generos-lista .card {
   position: relative;
   /* Necessário para o overlay funcionar */
   border-radius: 15px;
@@ -423,13 +450,13 @@ body {
 }
 
 /* Efeito quando passar o mouse em cima do card */
-.Gêneros-lista .card:hover {
+.generos-lista .card:hover {
   transform: scale(1.05);
   /* Dá um leve zoom no card */
 }
 
 /* Imagem dentro do card */
-.Gêneros-lista .card img {
+.generos-lista .card img {
   width: 100%;
   /* Faz a imagem ocupar toda a largura */
   height: 100%;
@@ -439,7 +466,7 @@ body {
 }
 
 /* Área de texto em cima da imagem (overlay) */
-.Gêneros-lista .card-img-overlay {
+.generos-lista .card-img-overlay {
   position: absolute;
   /* Fica por cima da imagem */
   bottom: 0;
@@ -476,7 +503,7 @@ body {
   /* Cor um pouco mais clara que o título */
 }
 
-
+/* #endregion */
 
 
    /* #region Footer */
